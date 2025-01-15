@@ -1,0 +1,127 @@
+/* Estilo básico para el body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo del h1 */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Estilo para los mensajes de carrito vacío */
+p {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilo para la lista de productos en el carrito */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Estilo para cada producto del carrito */
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los precios y nombres de productos */
+li span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de "Comprar" */
+a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el contenedor para centrar los botones */
+.botones-carrito {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el botón de "Vaciar carrito" */
+button[name="vaciar"] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Estilo para el botón de "Comprar" */
+.boton-comprar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el hover y active para ambos botones */
+button[name="vaciar"]:hover {
+    background-color: #ff1a1a;
+}
+
+button[name="vaciar"]:active {
+    background-color: #cc0000;
+}
+
+.boton-comprar:hover {
+    background-color: #45a049;
+}
+
+.boton-comprar:active {
+    background-color: #397d3b;
+}
+
+/* Estilo para cambiar el color del botón al pasar el mouse */
+a:hover {
+    background-color: #2ecc71;
+}
+
+/* Estilos para el botón de volver a la lista de productos */
+a[href="productos.php"] {
+    background-color: #3498db;
+}
+
+a[href="productos.php"]:hover {
+    background-color: #2980b9;
+}

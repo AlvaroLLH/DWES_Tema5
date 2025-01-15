@@ -7,6 +7,12 @@
         private $nombre;
         private $precio;
 
+        // Constructor
+        public function __construct($nombre, $precio) {
+            $this->nombre = $nombre;
+            $this->precio = $precio;
+        }
+
         // Getters y Setters
         public function getNombre(): string {
             return $this->nombre;

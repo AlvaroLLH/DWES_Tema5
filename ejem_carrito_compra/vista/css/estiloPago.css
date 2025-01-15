@@ -1,0 +1,48 @@
+/* Estilo básico para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilo del mensaje de pago completado o error */
+p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilo para el mensaje de pago completado */
+p:first-of-type {
+    color: #27ae60;  /* Color verde para indicar éxito */
+}
+
+/* Estilo para el mensaje de error o falta de productos */
+p:last-of-type {
+    color: #e74c3c;  /* Color rojo para indicar error */
+}
+
+/* Estilo para el enlace para volver a la lista de productos */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* Estilo para cambiar el color del enlace al pasar el mouse */
+a:hover {
+    color: #3498db;
+}

@@ -1,0 +1,64 @@
+/* Estilo básico para el body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo para el h1 */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/* Estilo para la lista de productos */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Estilo para cada producto */
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los nombres y precios de los productos */
+li span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de agregar al carrito */
+input[type="submit"]:hover {
+    background-color: #2ecc71;
+}
+
+/* Estilo para el enlace del carrito */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para cambiar el color del enlace al pasar el mouse */
+a:hover {
+    color: #3498db;
+}

@@ -12,6 +12,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estiloPago.css">
     <title>Realizar Pago de Productos</title>
 </head>
 <body>

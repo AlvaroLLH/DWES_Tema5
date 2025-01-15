@@ -27,12 +27,19 @@
         $indice = $_POST['indice'];
 
         // Guardamos el objeto producto correspondiente al índice
-        $_SESSION['carrito'][] = $productos[$indice];
+        $_SESSION['carrito'][] = serialize($productos[$indice]);
 
         // Redirige de vuelta a la lista de productos
         header('Location: ../vista/productos.php');
         exit;
         
+    }
+
+    // Lógica para vaciar el carrito
+    if(isset($_POST['vaciar'])) {
+        $_SESSION['carrito'] = [];
+        header("Location: ../vista/productos.php");
+        exit;
     }
 
 ?>
