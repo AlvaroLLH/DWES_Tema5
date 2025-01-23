@@ -18,26 +18,34 @@
 <body>
     <?php
 
-    // Mensaje por si el carrito está vacío
-    if(empty($_SESSION['carrito'])) {
-        echo "<p>El carrito está vacío</p>";
+        // Mensaje por si el carrito está vacío
+        if (empty($_SESSION['carrito'])) {
+            echo "<p>El carrito está vacío</p>";
+            
+        } else {
+            echo "<h1>Carrito de Productos:</h1>";
+            echo "<ul>";
 
-    } else {
+            // Recorremos el carrito
+            foreach ($_SESSION['carrito'] as $index => $item) {
 
-        // Mostramos el carrito
-        echo "<h1>Carrito de Productos:</h1>";
-        echo "<ul>";
+                // Deserializamos el producto
+                $producto = unserialize($item['producto']);
+                $cantidad = $item['cantidad'];
+                $subtotal = $producto->getPrecio() * $cantidad;
 
-        // Recorremos el carrito
-        foreach($_SESSION['carrito'] as $productoSerializado) {
+                // Mostramos el producto con un botón para eliminarlo
+                echo "<li>{$producto->getNombre()} - {$cantidad} unidad(es) - {$subtotal}&euro;";
+                echo "
+                    <form action='../controlador/controlador.php' method='post' style='display:inline; margin-left:10px;'>
+                        <input type='hidden' name='eliminar' value='{$index}'>
+                        <button type='submit'>Eliminar</button>
+                    </form>
+                </li>";
+            }
 
-            // Deserializamos el producto y lo mostramos
-            $producto = unserialize($productoSerializado);
-            echo "<li>{$producto->getNombre()} - {$producto->getPrecio()}&euro;</li>";
-
+            echo "</ul>";
         }
-
-    }
 
     ?>
 

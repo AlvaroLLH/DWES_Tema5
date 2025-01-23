@@ -74,6 +74,7 @@ button[name="vaciar"] {
     background-color: #ff4d4d;
     color: white;
     border: none;
+    font-weight: bold;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
@@ -124,4 +125,27 @@ a[href="productos.php"] {
 
 a[href="productos.php"]:hover {
     background-color: #2980b9;
+}
+
+/* Estilo del botón para eliminar un producto */
+button[type="submit"] {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el efecto hover */
+button[type="submit"]:hover {
+    background-color: #e60000;
+}
+
+/* Estilo para el efecto activo cuando presionamos el botón */
+button[type="submit"]:active {
+    background-color: #cc0000;
+    transform: scale(0.98);
 }

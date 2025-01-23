@@ -17,6 +17,7 @@
     <h1>Productos:</h1>
     <ul>
 
+        <!-- Recorremos el array y mostramos los productos disponibles -->
         <?php foreach ($productos as $indice => $producto) { ?>
             <li>
                 <?= $producto->getNombre() ?> - <?= $producto->getPrecio() ?>&euro;

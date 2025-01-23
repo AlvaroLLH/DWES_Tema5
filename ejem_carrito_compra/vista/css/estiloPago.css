@@ -22,12 +22,12 @@ p {
 
 /* Estilo para el mensaje de pago completado */
 p:first-of-type {
-    color: #27ae60;  /* Color verde para indicar éxito */
+    color: #27ae60;
 }
 
 /* Estilo para el mensaje de error o falta de productos */
 p:last-of-type {
-    color: #e74c3c;  /* Color rojo para indicar error */
+    color: #e74c3c;
 }
 
 /* Estilo para el enlace para volver a la lista de productos */
