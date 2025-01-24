@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <h1>Productos:</h1>
+    <h1>ViveFácil:</h1>
     <ul>
 
         <!-- Recorremos el array y mostramos los productos disponibles -->

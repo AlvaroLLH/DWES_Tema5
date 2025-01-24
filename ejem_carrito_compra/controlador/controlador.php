@@ -10,9 +10,11 @@
 
     // Lista de productos usando un Array (simulando una BD)
     $productos = [
-        new Producto("Champú", 10),
-        new Producto("Jabón", 5),
-        new Producto("Pasta de dientes", 3)
+        new Producto("Gel de ducha aromático", 7),
+        new Producto("Toallas de algodón ecológico (2 toallas)", 15),
+        new Producto("Set de velas aromáticas", 10),
+        new Producto("Cepillo de bambú para dientes", 4),
+        new Producto("Té verde orgánico (20 bolsitas)", 6)
     ];
 
     // Creamos la sesión carrito si no existe
